@@ -1,0 +1,63 @@
+[vite] connecting... client.ts:19:8
+Sentry Logger [log]: Integration installed: InboundFilters logger.ts:72
+Sentry Logger [log]: Integration installed: FunctionToString logger.ts:72
+Sentry Logger [log]: Integration installed: TryCatch logger.ts:72
+Sentry Logger [log]: Integration installed: Breadcrumbs logger.ts:72
+Sentry Logger [log]: Global Handler attached: onerror logger.ts:72
+Sentry Logger [log]: Global Handler attached: onunhandledrejection logger.ts:72
+Sentry Logger [log]: Integration installed: GlobalHandlers logger.ts:72
+Sentry Logger [log]: Integration installed: LinkedErrors logger.ts:72
+Sentry Logger [log]: Integration installed: Dedupe logger.ts:72
+Sentry Logger [log]: Integration installed: HttpContext logger.ts:72
+Sentry Logger [log]: [Tracing] Starting pageload transaction on scope logger.ts:72
+Sentry Logger [log]: Setting idle transaction on scope. Span ID: abd806c0f3f9d8c3 logger.ts:72
+Sentry Logger [log]: [Tracing] starting pageload transaction - / logger.ts:72
+Sentry Logger [log]: Starting heartbeat logger.ts:72
+Sentry Logger [log]: pinging Heartbeat -> current counter: 0 logger.ts:72
+Sentry Logger [log]: Integration installed: BrowserTracing logger.ts:72
+Sentry Logger [log]: [Tracing] Transaction: internal_error -> Global error occured logger.ts:72
+Uncaught ReferenceError: myUndefinedFunction is not defined
+    <anonymous> setup.js:129
+    onLoad sdk.ts:192
+    <anonymous> setup.js:127
+setup.js:129:3
+before 
+Object { traceId: "e24ec6ac49d643e589b5b890813ce847", spanId: "abd806c0f3f9d8c3", startTimestamp: 1700066764.1399999, tags: {…}, data: {}, op: "pageload", _measurements: {…}, _frozenDynamicSamplingContext: undefined, _hub: {…}, _name: "/", … }
+instrument.ts:121
+[vite] connected. instrument.ts:121
+Fetch successful: 
+Object { userId: 1, id: 1, title: "delectus aut autem", completed: false }
+instrument.ts:121
+after 
+Object { traceId: "e24ec6ac49d643e589b5b890813ce847", spanId: "abd806c0f3f9d8c3", startTimestamp: 1700066764.1399999, tags: {…}, data: {}, op: "pageload", _measurements: {…}, _frozenDynamicSamplingContext: undefined, _hub: {…}, _name: "/", … }
+instrument.ts:121
+Sentry Logger [log]: [Tracing] finishing IdleTransaction 2023-11-15T16:46:05.600Z pageload logger.ts:72
+Sentry Logger [log]: [Tracing] Adding & adjusting spans using Performance API logger.ts:72
+Sentry Logger [log]: [Tracing] Starting 'browser' span on transaction '/' (abd806c0f3f9d8c3). 7 logger.ts:72
+Sentry Logger [log]: [Tracing] Starting 'resource.link' span on transaction '/' (abd806c0f3f9d8c3). logger.ts:72
+Sentry Logger [log]: [Tracing] Starting 'resource.script' span on transaction '/' (abd806c0f3f9d8c3). 191 logger.ts:72
+Sentry Logger [log]: [Tracing] Starting 'resource.other' span on transaction '/' (abd806c0f3f9d8c3). logger.ts:72
+Sentry Logger [log]: [Tracing] Starting 'mark' span on transaction '/' (abd806c0f3f9d8c3). logger.ts:72
+Sentry Logger [log]: [Tracing] Starting 'resource.script' span on transaction '/' (abd806c0f3f9d8c3). 3 logger.ts:72
+Sentry Logger [log]: [Tracing] Starting 'paint' span on transaction '/' (abd806c0f3f9d8c3). logger.ts:72
+Sentry Logger [log]: [Measurements] Adding FCP logger.ts:72
+Sentry Logger [log]: [Tracing] Starting 'resource.script' span on transaction '/' (abd806c0f3f9d8c3). 50 logger.ts:72
+Sentry Logger [log]: [Tracing] Starting 'mark' span on transaction '/' (abd806c0f3f9d8c3). 2 logger.ts:72
+Sentry Logger [log]: [Measurements] Adding TTFB logger.ts:72
+Sentry Logger [log]: [Tracing] flushing IdleTransaction logger.ts:72
+Sentry Logger [log]: [Measurements] Adding measurements to transaction {
+  "fcp": {
+    "value": 478,
+    "unit": "millisecond"
+  },
+  "ttfb": {
+    "value": 109.00020599365234,
+    "unit": "millisecond"
+  },
+  "ttfb.requestTime": {
+    "value": 17.000198364257812,
+    "unit": "millisecond"
+  }
+} logger.ts:72
+Sentry Logger [log]: [Tracing] Finishing pageload transaction: /. logger.ts:72
+Sentry Logger [log]: [Measurements] Adding FID
